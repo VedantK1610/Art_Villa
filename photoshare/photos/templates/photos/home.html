@@ -1,0 +1,228 @@
+{% extends 'photos/base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+<div class="container-fluid header bg-white p-0">
+    <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4"></h1> <span class="text-primary" style="font-size: 80px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 700;">Art Villa</span> <br><span style="font-weight: 500;font-size: 20px;">"If I Could Say It In Words There Would Be No Reason To Paint"</span></h1>
+            <p class="animated fadeIn mb-4 pb-2" style="margin-top: 6px;">No Matter What The Weather, No Matter What The Situation We Are In, If We Have The Right
+                Perspective In Life, Life Will Always Be Beautiful And Colourful.</p>
+
+                
+            
+        </div>
+        <div class="col-md-6 animated fadeIn">
+            <div class="owl-carousel header-carousel">
+                <div class="owl-carousel-item">
+                    <img class="img-fluid" src="https://previews.123rf.com/images/marylooo/marylooo2211/marylooo221100101/194264043-watercolor-art-background-digital-generated-wallpaper-design-with-flower-paint-brush-line-art.jpg" alt="">
+                </div>
+                <div class="owl-carousel-item">
+                    <img class="img-fluid" src="https://previews.123rf.com/images/marylooo/marylooo2209/marylooo220900259/191574724-watercolor-art-background-digital-generated-wallpaper-design-with-flower-paint-brush-line-art.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+
+{% block category_section %} 
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Types Of Arts </h1>
+           
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGG8cqyf58hAGSUnQCvzgmKARFhu77Iry5w&usqp=CAU.png" alt="Icon">
+                        </div>
+                        <h6>Portrait</h6>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxmILx04WZ-Trbk4jr3c2bzlihB0x0iJBGyQ&usqp=CAU.png" style="border-radius: 20px;" alt="Icon">
+                        </div>
+                        <h6>Photography</h6>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqvAXe_iX4taEoC0ObGZU8kiVKRZ6gGWPCQ&usqp=CAU.png" style="border-radius: 20px;" alt="Icon">
+                        </div>
+                        <h6>Cartoons</h6>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5N-VeGcWyBwVUEmy7cBySWNBUKO0UI9Jdmg&usqp=CAU.png" style="border-radius: 20px;" alt="Icon">
+                        </div>
+                        <h6>Abstract</h6>
+                        
+                    </div>
+                </a>
+            </div>
+       
+        </div>
+    </div>
+</div>
+{% endblock category_section %}
+
+{% block about_section %} 
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                    <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHw%3D&w=1000&q=80.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="mb-4">A way of perfection</h1>
+                
+                <p><i class="fa fa-check text-primary me-3"></i>Displaying The Artwork Being To Promote It To Potential Buyers.</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Attractive Arts </p>
+                <p><i class="fa fa-check text-primary me-3"></i>Userfriendly Art Gallery</p>
+                <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock about_section %}
+
+{% block artlist_section %}
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+                <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                    <h1 class="mb-3">Some Intresting Arts</h1>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://swadesi.org/wp-content/uploads/2022/11/Rains-Rustle.jpg" alt=""></a>
+                                
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Portrait</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                
+                                <a class="d-block h5 mb-2" href="">The art of different shades</a>
+                                
+                            </div>
+                            <div class="d-flex border-top">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://thumbs.dreamstime.com/b/sunset-angkor-wat-9035539.jpg" alt=""></a>
+                               
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Photography</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                
+                                <a class="d-block h5 mb-2" href="">Panorama View Of Angkor Temple</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://www.looper.com/img/gallery/60-best-cartoon-characters-of-all-time-ranked/mickey-mouse-1644378907.jpg" alt=""></a>
+                                
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Cartoons</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                               
+                                <a class="d-block h5 mb-2" href="">Cartoons Characters Of All Time </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://e0.pxfuel.com/wallpapers/211/495/desktop-wallpaper-most-famous-abstract-art-paintings-in-the-world-thumbnail.jpg" alt=""></a>
+                                
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Abstract</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                
+                                <a class="d-block h5 mb-2" href="">Magic Of shades</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://worlduniversityofdesign.ac.in/assets/images/bgs/contempary-art-practice-banner.jpg" alt=""></a>
+                                
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Contemporary Art</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                
+                                <a class="d-block h5 mb-2" href="">Realistic Contemporary</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="https://static.demilked.com/wp-content/uploads/2019/01/5c3364448d271-People-are-copying-works-of-art-and-the-result-is-perfect-5c24e78e679be__880.jpg" alt=""></a>
+                                
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Skteches</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                
+                                <a class="d-block h5 mb-2" href="">Some Might Be Better Than The Originals</a>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="btn btn-primary py-3 px-5" href="/arts">Many More Arts</a>
+                    </div>
+                </div>
+            </div>
+           
+ {% endblock artlist_section %}
+
+{% block main-content %}
+{% endblock main-content %}

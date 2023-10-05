@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>ART Villa | Login</title>
+    <link rel="stylesheet" href="{% static 'app/css/login.css' %}">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="https://sc02.alicdn.com/kf/Hf71ac851712a4714afd303bf8c2ea086S.jpg" alt="">
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="https://sc02.alicdn.com/kf/Hf71ac851712a4714afd303bf8c2ea086S.jpg" alt="">
+        <div class="text">
+          
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+             {% if messages %}
+            
+            {% for message in messages %}
+            <!-- <div class="alert alert-info">
+              {{ message }}
+            </div> -->
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <div>
+                {{ message }}
+              </div>
+            </div>
+            {% endfor %}
+           
+            {% endif %}
+            <div class="title">Login</div>
+          <form action="" method="post">
+            {% csrf_token %}
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name='lusername' placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="lpassword" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label>
+              </div>
+              <!-- {% if messages %}
+            
+            {% for message in messages %}
+            <div class="alert alert-info">
+              {{ message }}
+            </div>
+            
+            {% endfor %}
+           
+            {% endif %} -->
+            </div>
+            
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Registration</div>
+        <form action="" method="post">
+          {% csrf_token %}
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="firstname" placeholder="First Name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="Enter your username" required pattern="(?=.*\d)\w+.{6,20}" title="username may only contain letters and numbers">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter your password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$" title="password pattern will accept between 8 & 25 characters and include a uppercase letter, lowercase letter, and a number">
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    <a href="/" style="width: 80px; height: 20px; padding: 10px; background-color: green; color: white; border-radius: 5px; text-decoration: none; margin-left: 20%;" class="nav-item nav-link">Home</a>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends 'photos/base.html' %}
+
+{% load static %}
+
+{% block title %}Arts{% endblock title %}
+
+{% block photo-content %}
+<body class="m-5">
+    <div class="container">
+        <a href="{% url 'gallery' %}" class="btn btn-dark my-3">GO Back</a>
+        <div class="row flex justify-content-center">
+            <div class="img2 col-lg-6 mt-5">
+                
+                <img  style="width: 100%; height: 80%;" class="image col-xl-6 col-sm-12 col-lg-12 mt-3" src="{{photo.image.url}}" />
+            </div>
+            <div class="imgdetail col-lg-4">    
+                     <h1 class="des_head text-sm-center">Description</h1>   
+                    <p class="des">{{photo.description}}</p>
+                    <h2 class="img_price">RS.{{photo.selling_price}}/-</h2>
+                    <div class="buttons row flex"> 
+                        <button id="submit_btn" data-product={{photo.id}} data-action="add" class="add-btn update-cart d-grip gap-2 btn1 btn btn-danger p-1 m-1 btn-lg text-white">Add to Cart</button>
+
+                        <button type="submit" id="submit_btn" class="d-grip gap-2 btn1 btn btn-dark p-1 m-1 btn-lg text-white"><a href="#" class="text-decoration-none text-white">Buy Now</a></button>
+                    </div>    
+            </div>  
+              <h1 id="trial"></h1>
+        </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+{% endblock photo-content %}
